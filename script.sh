@@ -7,7 +7,7 @@ makepkg -si
 bash
 yay -Syu
 echo "empezando instalacion de paquetes"
-yay -S papirus-dark-kde-git papirus-maia-icon-theme-git papirus-icon-theme-git visual-studio-code-bin intellij-idea-community-edition spring-tool-suite firefox-i18n-es-mx firefox-developer-edition-i18n-es-mx chromium latte-dock-git freerdp libvncserver remmina teamviewer openssh gimp docker docker-compose gnome-keyring android-studio postman ms-office-online-nativefier
+yay -S papirus-dark-kde-git papirus-maia-icon-theme-git papirus-icon-theme-git visual-studio-code-bin intellij-idea-community-edition spring-tool-suite firefox-i18n-es-mx firefox-developer-edition-i18n-es-mx chromium latte-dock-git freerdp libvncserver remmina teamviewer openssh gimp docker docker-compose gnome-keyring android-studio postman ms-office-online-nativefier terraform typescrypt mongodb postman
 
 echo "Permisos de usuario Docker:"
 sudo groupadd docker | sudo usermod -aG docker $USER
