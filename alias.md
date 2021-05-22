@@ -22,9 +22,10 @@ alias l='ls'
 alias ll='l -lhaS'
 
 # Variables para Python
-# Rcortar python
+# Recortar python
 alias py='python'
 alias ipy='ipython'
+
 # Crear entorno virtual 
 alias pyEnv="py -m venv env"
 # Activar entorno virtual
@@ -39,7 +40,6 @@ alias gadd="git add ."
 alias gcommit="git commit -am" 
 alias gpull="git pull origin master"
 alias gpush="git push origin master"
-
 
 # <<< FUNCIONES PERSONALIZADAS >>>
 # <<< Fin >>>

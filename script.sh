@@ -13,7 +13,7 @@ makepkg -si
 cd ~
 curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | gpg --import -
 echo "empezando instalacion de paquetes"
-yay -S papirus-dark-kde-git papirus-maia-icon-theme-git papirus-icon-theme-git visual-studio-code-bin intellij-idea-community-edition firefox-i18n-es-mx firefox-developer-edition-i18n-es-mx chromium latte-dock-git freerdp libvncserver remmina teamviewer openssh gimp docker docker-compose gnome-keyring android-studio ms-office-online-nativefier terraform typescript postman-bin audacity obs-studio shotcut gtk-update-icon-cache opera teams ipython-git lol-cat cowsay tree net-tools bzip2 wget  
+yay -S papirus-dark-kde-git papirus-maia-icon-theme-git papirus-icon-theme-git visual-studio-code-bin intellij-idea-community-edition firefox-i18n-es-mx firefox-developer-edition-i18n-es-mx chromium latte-dock-git freerdp libvncserver remmina teamviewer openssh gimp docker docker-compose gnome-keyring android-studio ms-office-online-nativefier terraform typescript postman-bin audacity obs-studio shotcut gtk-update-icon-cache opera teams ipython-git lol-cat cowsay tree net-tools bzip2 wget zsh tilix
 # paquetes no usados
 # mongodb-bin spring-tool-suite 
 # 
@@ -63,5 +63,14 @@ sudo gtk-update-icon-cache /usr/share/icons/*
 nano ~/.ssh/id_rsa.pub
 
 mkdir ~/Code 
+zsh --version
+chsh -s $(which zsh)
+
+echo "Capa de personalizacion de zsh con ohmyzsh"
+sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 sh agregarAliasPersonalizados.sh
+
+
+echo "RECUERDA: agregar  ZSH_THEME=\"powerlevel10k/powerlevel10k\" en ~/.zshrc."
