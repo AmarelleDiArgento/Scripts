@@ -32,6 +32,14 @@ alias avenv="source ./env/bin/activate"
 # Desactivar entorno virtual
 alias dvenv="deactivate"
 
+# Variables para Git
+# Recortar git
+alias gstat="git status"
+alias gadd="git add ."
+alias gcommit="git commit -am" 
+alias gpull="git pull origin master"
+alias gpush="git push origin master"
+
 
 # <<< FUNCIONES PERSONALIZADAS >>>
 # <<< Fin >>>
