@@ -1,17 +1,22 @@
 #!/bin/bash
-sudo nano /etc/pacman.conf
-sudo pacman-mirrors -g
+sudo nano /etc/pacman.conf 
+sudo pacman-mirrors -g 
 sudo pacman -S base-devel 
 cd ~
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si | bash
-yay -Syu
+HISTSIZE=100000
+HISTCONTROL=ignoredups
+cd /opt
+sudo git clone https://aur.archlinux.org/yay-git.git
+sudo chown -R freya:freya ./yay-git
+cd yay-git
+makepkg -si
+cd ~
 curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | gpg --import -
 echo "empezando instalacion de paquetes"
-yay -S papirus-dark-kde-git papirus-maia-icon-theme-git papirus-icon-theme-git visual-studio-code-bin intellij-idea-community-edition firefox-i18n-es-mx firefox-developer-edition-i18n-es-mx chromium latte-dock-git freerdp libvncserver remmina teamviewer openssh gimp docker docker-compose gnome-keyring android-studio postman ms-office-online-nativefier terraform typescript postman audacity obs-studio shotcut gtk-update-icon-cache opera teams
+yay -S papirus-dark-kde-git papirus-maia-icon-theme-git papirus-icon-theme-git visual-studio-code-bin intellij-idea-community-edition firefox-i18n-es-mx firefox-developer-edition-i18n-es-mx chromium latte-dock-git freerdp libvncserver remmina teamviewer openssh gimp docker docker-compose gnome-keyring android-studio ms-office-online-nativefier terraform typescript postman-bin audacity obs-studio shotcut gtk-update-icon-cache opera teams ipython-git lol-cat cowsay tree net-tools bzip2 wget  
 # paquetes no usados
 # mongodb-bin spring-tool-suite 
+# 
 
 echo "Permisos de usuario Docker:"
 sudo groupadd docker | sudo usermod -aG docker $USER
@@ -56,3 +61,7 @@ sudo find /usr/share/icons/Papirus -type l -path '*/places/*' \( -ilname '*-blue
 sudo gtk-update-icon-cache /usr/share/icons/*
 
 nano ~/.ssh/id_rsa.pub
+
+mkdir ~/Code 
+
+sh agregarAliasPersonalizados.sh
