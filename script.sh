@@ -67,10 +67,14 @@ zsh --version
 chsh -s $(which zsh)
 
 echo "Capa de personalizacion de zsh con ohmyzsh"
+# Sitio: https://ohmyz.sh/
 sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+# Sitio: https://github.com/romkatv/powerlevel10k#oh-my-zsh
+# Tutorial: https://www.edevars.com/blog/personalizar-terminal
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 sh agregarAliasPersonalizados.sh
 
 
 echo "RECUERDA: agregar  ZSH_THEME=\"powerlevel10k/powerlevel10k\" en ~/.zshrc."
+echo "Si necesitas volver a correr el panel de configuracion de p10k usa -> p10k configure"

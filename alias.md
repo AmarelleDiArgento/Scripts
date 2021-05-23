@@ -1,12 +1,31 @@
-#
-
-# <<< Inicio >>>
 # <<< FUNCIONES PERSONALIZADAS >>>
+# <<< INICIO >>>
+
 # Acceso directo para editar variables de entorno
-alias EditVars="code ~/.bashrc"
+alias EditVars="code DIRECCIONDESCRIPTS"
 alias editvars="EditVars"
 alias Editvars="EditVars"
 alias editVars="EditVars"
+
+# Variables para YAY
+alias yayUpd="yay -Syu"
+alias yayRmv="yay -Rs"
+alias yayCln="yay -Scc"
+alias yayFin="yay -Ss"
+alias yayGet="yay -S"
+alias yayInf="yay -Qi"
+
+# Variables Docker
+alias dps="docker ps"
+alias dlg="docker logs"
+alias dcl="docker system prune --all"
+
+#Variables Docker Compose
+alias comps="docker-compose ps"
+alias comup="docker-compose up -d"
+alias comdw="docker-compose down"
+alias comrs="docker-compose restart"
+alias comlg="docker-compose logs"
 
 # Acceso directo al directorio Code
 alias DCode="cd ~/Code/"
@@ -16,7 +35,7 @@ alias Dcode="DCode"
 alias Dcode="DCode"
 
 # Resumen de funciones
-alias bh="clear; bash"
+alias cz="clear; bash"
 alias cl="clear"
 alias l='ls'
 alias ll='l -lhaS'
@@ -40,6 +59,7 @@ alias gadd="git add ."
 alias gcommit="git commit -am" 
 alias gpull="git pull origin master"
 alias gpush="git push origin master"
+alias glog="git log --all --decorate --oneline --graph"
 
+# <<< FIN >>>
 # <<< FUNCIONES PERSONALIZADAS >>>
-# <<< Fin >>>
