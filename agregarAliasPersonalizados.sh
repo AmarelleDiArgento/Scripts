@@ -1,13 +1,18 @@
 #!/bin/bash
-
+WD=$PWD
 echo "Adicionando alias personalizados para bash y zsh"
-python editVarsEnv.py
-sed 's?DIRECCIONDESCRIPTS?'`pwd`/alias.md'?' alias.md > alias_bk
-cat ~/.bashrc alias_bk > .bashrc
+DIR=/home/freya/.Scripts/
+cd $DIR
+
+python clearVarsEnv.py
+sed 's?DIRECCIONDESCRIPTS?'`cat ~/.pwd_local`'?' alias.md > alias_bk
+cat ~/.bashrc alias_bk > .bashrc_bk
 sed -i 's/bash/zsh/' alias_bk
-cat ~/.zshrc alias_bk > .zshrc
+cat ~/.zshrc alias_bk > .zshrc_bk
 sed -i 's/zsh/bash/' alias_bk
 
-cp .zshrc ~/.zshrc
-cp .bashrc ~/.bashrc
+cp .zshrc_bk ~/.zshrc
+cp .bashrc_bk ~/.bashrc
 find . -type f -name "*bk*" -exec rm -rf {} \;
+
+cd $WD

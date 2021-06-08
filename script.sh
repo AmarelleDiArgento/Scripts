@@ -3,8 +3,6 @@ sudo nano /etc/pacman.conf
 sudo pacman-mirrors -g 
 sudo pacman -S base-devel 
 cd ~
-HISTSIZE=100000
-HISTCONTROL=ignoredups
 cd /opt
 sudo git clone https://aur.archlinux.org/yay-git.git
 sudo chown -R freya:freya ./yay-git
@@ -73,8 +71,14 @@ sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O 
 # Tutorial: https://www.edevars.com/blog/personalizar-terminal
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
-sh agregarAliasPersonalizados.sh
 
+mv ~/Scripts ~/.Scripts
+cd ~/.Scripts
+pwd > ~/.pwd_local
+sh ~/.Scripts/agregarAliasPersonalizados.sh
 
 echo "RECUERDA: agregar  ZSH_THEME=\"powerlevel10k/powerlevel10k\" en ~/.zshrc."
 echo "Si necesitas volver a correr el panel de configuracion de p10k usa -> p10k configure"
+
+HISTSIZE=100000
+HISTCONTROL=ignoredups

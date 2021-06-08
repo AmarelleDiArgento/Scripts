@@ -10,6 +10,12 @@
 
 
 
+
+
+
+
+
+
 # <<< FUNCIONES PERSONALIZADAS >>>
 # <<< INICIO >>>
 
@@ -18,6 +24,7 @@ alias EditVars="code /home/freya/Plantillas/Scripts/alias.md"
 alias editvars="EditVars"
 alias Editvars="EditVars"
 alias editVars="EditVars"
+alias update="sh /home/freya/Plantillas/Scripts/agregarAliasPersonalizados.sh; cz"
 
 # Variables para YAY
 alias yayUpd="yay -Syu"

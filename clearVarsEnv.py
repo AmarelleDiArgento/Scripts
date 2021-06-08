@@ -30,8 +30,6 @@ def leer(consola):
         nuevoArchivo[max(bloque)+1]["bloque"] = False
 
         with open(path, "w", encoding="utf-8") as archivo:
-            archivo.write("\n")
-            archivo.write("\n")
             for linea in nuevoArchivo:
                 if linea["bloque"] == True:
                     archivo.write(linea["texto"])
