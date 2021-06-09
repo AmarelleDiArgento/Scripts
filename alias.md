@@ -59,6 +59,10 @@ alias avenv="source ./env/bin/activate"
 # Desactivar entorno virtual
 alias dvenv="deactivate"
 
+
+alias USUARIO="echo "\"AmarelleDiArgento"\""
+alias Email="ewige.quel@gmail.com"
+
 # Variables para Git
 # Recortar git
 alias ginit="git init"
@@ -69,6 +73,13 @@ alias gcommit="git commit -am"
 alias gpull="git pull origin master"
 alias gpush="git push origin master"
 alias glog="git log --all --decorate --oneline --graph"
+alias gAddUser="git config --global user.name AmarelleDiArgento"
+alias gAddEmail= "git config --global user.email ewige.qual@gmail.com"
+
+alias gkeys="ssh-keygen -t rsa -b 4096 -C ewige.qual@gmail.com"
+alias gagent="eval $(ssh-agent -s)"
+alias gssh="ssh-add ~/.ssh/id_rsa"
+alias gVwKey="cat ~/.ssh/id_rsa.pub"
 
 # Variables para TeamViwer
 # Arrancar Daemon
