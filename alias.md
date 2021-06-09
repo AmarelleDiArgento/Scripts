@@ -5,12 +5,18 @@
 alias pdw_local="cat ~/.pwd_local"
 alias hola="cowsay -f dragon Wolaaaa | lolcat"
 
+# AGREGAR VARIABLES DE ENTORNO
+alias pEnv="sudo nano /etc/environment"
+
 # Acceso directo para editar variables de entorno
 alias EditVars="code DIRECCIONDESCRIPTS/alias.md"
 alias editvars="EditVars"
 alias Editvars="EditVars"
 alias editVars="EditVars"
 alias update="sh DIRECCIONDESCRIPTS/agregarAliasPersonalizados.sh;cz"
+alias upd="update"
+alias Upd="update"
+alias UPD="update"
 
 # Variables para YAY
 alias yayUpd="yay -Syu"
@@ -26,7 +32,7 @@ alias dlg="docker logs"
 alias dex="docker exec"
 alias dcl="docker system prune --all"
 
-#Variables Docker Compose
+# Variables Docker Compose
 alias comps="docker-compose ps"
 alias comup="docker-compose up -d"
 alias comdw="docker-compose down"
@@ -60,8 +66,8 @@ alias avenv="source ./env/bin/activate"
 alias dvenv="deactivate"
 
 
-alias USUARIO="echo AmarelleDiArgento"
-alias EMAIL="echo ewige.quel@gmail.com"
+# alias USUARIO="echo AmarelleDiArgento"
+# alias EMAIL="echo ewige.quel@gmail.com"
 
 # Variables para Git
 # Recortar git
