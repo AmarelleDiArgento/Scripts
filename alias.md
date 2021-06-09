@@ -60,8 +60,8 @@ alias avenv="source ./env/bin/activate"
 alias dvenv="deactivate"
 
 
-alias USUARIO="echo "\"AmarelleDiArgento"\""
-alias Email="ewige.quel@gmail.com"
+alias USUARIO="echo AmarelleDiArgento"
+alias EMAIL="echo ewige.quel@gmail.com"
 
 # Variables para Git
 # Recortar git
