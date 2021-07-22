@@ -11,7 +11,7 @@ makepkg -si
 cd ~
 curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | gpg --import -
 echo "empezando instalacion de paquetes"
-yay -S papirus-dark-kde-git papirus-maia-icon-theme-git papirus-icon-theme-git visual-studio-code-bin intellij-idea-community-edition firefox-i18n-es-mx firefox-developer-edition-i18n-es-mx chromium latte-dock-git freerdp libvncserver remmina teamviewer openssh gimp docker docker-compose gnome-keyring android-studio ms-office-online-nativefier terraform typescript postman-bin audacity obs-studio shotcut gtk-update-icon-cache opera teams ipython-git lol-cat cowsay tree net-tools bzip2 wget zsh tilix
+yay -S papirus-dark-kde-git papirus-maia-icon-theme-git papirus-icon-theme-git visual-studio-code-bin intellij-idea-community-edition firefox-i18n-es-mx firefox-developer-edition-i18n-es-mx chromium latte-dock-git freerdp libvncserver remmina teamviewer openssh gimp docker docker-compose gnome-keyring android-studio ms-office-online-nativefier terraform typescript postman-bin audacity obs-studio shotcut gtk-update-icon-cache opera teams ipython-git lol-cat cowsay tree net-tools bzip2 wget zsh tilix unixodbc
 # paquetes no usados
 # mongodb-bin spring-tool-suite 
 # 

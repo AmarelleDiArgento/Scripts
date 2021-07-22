@@ -101,6 +101,23 @@ alias twStatus="systemctl status teamviewerd"
 # Primer cargue de  TeamViewer
 alias twInit="twStart; twRun; twStatus"
 
+# Variables de nVIM
+alias vi="nvim"
+
+# Variables de history
+# para llamar un comando 
+alias htail="history | tail -n "
+alias hgrep="history | grep"
+alias hinfo="echo 'Para usar el ID de history se usa ! + ID ejm: !123'"
+
+#### notas de vim
+#### Insetar texto i a I A
+#### Borrar texto d D x X
+#### Borrar + Insertar c C s S
+#### Deshacer u Ctrl + u
+#### guardar :w nombrearchivo
+#### abrir :e nombrearchivo 
+
 
 # <<< FIN >>>
 # <<< FUNCIONES PERSONALIZADAS >>>
